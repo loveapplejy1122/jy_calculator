@@ -1,0 +1,130 @@
+//기본 색상
+$primary-color: #262626;
+$buttonDark: darken($primary-color, 10%);
+$buttonDarker: darken($primary-color, 10%);
+$base-color: #bdbdbb;
+$point-color: #161616;
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+body {
+  color: $base-color;
+  overflow: hidden;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.calculator {
+  display: inline-block;
+  background-color: $primary-color;
+  vertical-align: middle;
+  margin: 0 auto;
+  border-radius: 5px;
+
+  .header {
+    text-align: center;
+    width: 100%;
+    padding: 1%;
+    padding-top: 2%;
+  }
+
+  .display_area {
+    display: table;
+    font-size: 30px;
+    height: 10%;
+    width: 98%;
+    margin: 1%;
+
+    .display {
+      display: table-cell;
+      overflow: hidden;
+      padding-right: 2%;
+      background: -webkit-linear-gradient(top, #393939, #2d2d2d);
+      background: -o-linear-gradient(top, #393939, #2d2d2d);
+      background: -moz-linear-gradient(top, #393939, #2d2d2d);
+      background: linear-gradient(top, #393939, #2d2d2d);
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+      vertical-align: middle;
+      border: 2px solid #161616;
+      margin: 1%;
+      height: 84%;
+      border-radius: 7px;
+
+      span {
+        float: right;
+        font-weight: 300;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .button_area {
+    height: 85%;
+    ul {
+      height: 100%;
+
+      li {
+        float: left;
+        position: relative;
+        width: 23%;
+        height: 17%;
+        margin: 1%;
+        &.w_expand {
+          width: 48%;
+        }
+
+        button {
+          float: left;
+          width: 100%;
+          height: 100%;
+          background: $primary-color;
+          background: -webkit-linear-gradient(top, #393939, #2d2d2d);
+          background: -o-linear-gradient(top, #393939, #2d2d2d);
+          background: -moz-linear-gradient(top, #393939, #2d2d2d);
+          background: linear-gradient(top, #393939, #2d2d2d);
+          box-shadow: 1px 1px 3px $buttonDark;
+          color: $base-color;
+          border: 2px solid $point-color;
+          font-size: 1.5rem;
+          font-weight: 300;
+          &:focus {
+            outline: 0;
+          }
+          &:active {
+            box-shadow: 0px 1px 10px #000000 inset;
+          }
+          &.c_expand {
+            height: 210%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 100%;
+
+    .calculator {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .calculator {
+    height: 700px;
+  }
+}
+

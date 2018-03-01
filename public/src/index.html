@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=no">
+    <title>계산기</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+
+<body>
+<div class="container">
+    <div class="calculator">
+        <div class="header">
+            <div class="window_btn">
+                <!--<button id="minimize" class="minimize">-</button>-->
+            </div>
+            <h5>계산기</h5>
+        </div>
+        <div class="display_area">
+
+            <div class="display">
+                <span id="num_result"></span>
+            </div>
+
+        </div>
+        <div class="button_area">
+            <ul class="list_calc">
+                <li>
+                    <button type="button" class="btn_calc btn_reset" title="리셋" value="C">C</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_bind" title="±" value="sign">±</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_divide" title="나누기" value="/">÷</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_multiply" title="곱하기" value="*">×</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="7">7</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="8">8</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="9">9</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_minus" title="빼기" value="-">-</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="4">4</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="5">5</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="6">6</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_plus" title="더하기" value="+">+</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc"  value="1">1</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="2">2</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc" value="3">3</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_result c_expand" title="계산하기" value="=">=</button>
+                </li>
+                <li class="w_expand">
+                    <button type="button" class="btn_calc btn_zero" value="0">0</button>
+                </li>
+                <li>
+                    <button type="button" class="btn_calc btn_dot" title="소수점" value=".">.</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
